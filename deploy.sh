@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-REPO=~/git-workflow-demo
+REPO=~/Git-AzureServer-workflow
 WEB=/var/www/html
 LOG=~/deploy.log
 

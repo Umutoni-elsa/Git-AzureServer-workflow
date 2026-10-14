@@ -25,7 +25,7 @@ jobs:
           ssh-keyscan -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
 
       - name: Run deploy script
-        run: ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "bash ~/git-workflow-demo/deploy.sh"
+        run: ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "bash ~/Git-AzureServer-workflow/deploy.sh"
 
       - name: Check site is up
         run: curl --fail --silent http://${{ secrets.SERVER_HOST }}/ > /dev/null
